@@ -20,6 +20,23 @@ body{
     font-family: "Lato"
 }
 
+/* CARD */
+
+.card{
+    border:none;
+    display:inline-block
+}
+
+.card-body{
+    background-color:black;
+}
+
+.card-title{
+    background-color: #0dcaf0;
+}
+
+
+
 
 
 
