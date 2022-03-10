@@ -40,8 +40,21 @@ body{
 .tar_dest{
     border:none;
     display:inline-block;
-    background-color:#0dcaf0
+    background-color:#0dcaf0;
 }
+
+/* FORM */
+
+#inputMessage3{
+    height: 300%
+}
+
+#boton_form{
+    background-color:#0dcaf0;
+    color:white;
+    width: 5em
+}
+
 
 /* FOOTER */
 footer{
