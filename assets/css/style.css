@@ -22,18 +22,27 @@ body{
 
 /* CARD */
 
-.card{
+.tar_qs{
     border:none;
     display:inline-block
 }
 
-.card-body{
+.cuerpo_qs{
     background-color:black;
 }
 
-.card-title{
+.tit_qs{
     background-color: #0dcaf0;
 }
+
+/* DESTACADOS */
+
+.tar_dest{
+    border:none;
+    display:inline-block;
+    background-color:#0dcaf0
+}
+
 
 
 
