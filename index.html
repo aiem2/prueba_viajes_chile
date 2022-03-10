@@ -21,6 +21,9 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+
     <title>Viajes Chile</title>
 </head>
 
@@ -132,9 +135,9 @@
         <!-- TORRES DEL PAINE -->
       <div class="card tar_dest me-3 mt-3" style="width: 18rem;">
         <img src="assets/img/card1.jpg" class="card-img-top" alt="Torres del Paine">
-        <div class="card-body text-white cuerpo_dest">
-          <h5 class="card-title tit_dest">Lorem ipsum dolor sit amet</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="card-body text-white">
+          <h5 id="tit_dest"  class="card-title tit_dest" data-bs-toggle="tooltip" data-bs-placement="top" title="Click para más información">Torres del Paine</h5>
+          <p id="cuerpo_dest"  class="card-text cuerpo_dest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           
         </div>
       </div>
@@ -142,9 +145,9 @@
       <!-- LAGUNAS ALTIPLÁNICAS -->
       <div class="card tar_dest me-3 mt-3" style="width: 18rem;">
         <img src="assets/img/card2.jpg" class="card-img-top" alt="Lagunas altiplánicas" style="height:192.02px">
-        <div class="card-body text-white cuerpo_dest">
-          <h5 class="card-title tit_dest">Consectetur adipisci elit</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="card-body text-white">
+          <h5 id="tit_dest"  class="card-title tit_dest" data-bs-toggle="tooltip" data-bs-placement="top" title="Click para más información">Laagunas altiplánicas</h5>
+          <p id="cuerpo_dest"  class="card-text cuerpo_dest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           
         </div>
       </div>
@@ -152,9 +155,9 @@
       <!-- SALAR -->
       <div class="card tar_dest me-3 mt-3" style="width: 18rem;">
         <img src="assets/img/card3.jpg" class="card-img-top" alt="Salar">
-        <div class="card-body text-white cuerpo_dest">
-          <h5 class="card-title tit_dest">Sed do eiusmod tempor incididunt ut labore</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. </p>
+        <div class="card-body text-white">
+          <h5 id="tit_dest"  class="card-title tit_dest" data-bs-toggle="tooltip" data-bs-placement="top" title="Click para más información">Salar de Atacama</h5>
+          <p id="cuerpo_dest"  class="card-text cuerpo_dest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           
         </div>
       </div>     
@@ -162,13 +165,21 @@
        <!-- SELVA VALDIVIANA -->
        <div class="card tar_dest me-3 mt-3" style="width: 18rem;">
         <img src="assets/img/card4.jpg" class="card-img-top" alt="Selva Valdiviana">
-        <div class="card-body text-white cuerpo_dest">
-          <h5 class="card-title tit_dest">Ut enim ad minim veniam</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="card-body text-white">
+          <h5 id="tit_dest" class="card-title tit_dest" data-bs-toggle="tooltip" data-bs-placement="top" title="Click para más información">Selva Valdiviana</h5>
+          <p id="cuerpo_dest" class="card-text cuerpo_dest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           
         </div>
-      </div>     
 
+        <script>
+          $(document).ready(function(){
+            $(".cuerpo_dest").toggle(100);
+            $(".tit_dest").dblclick(function(){
+              $(".cuerpo_dest").toggle();
+            });
+          });
+        </script>
+      </div>     
     </section>
 
     <div id="contacto" class="row">
@@ -200,6 +211,8 @@
         
         <button id="boton_form" type="submit" class="btn container ms-4 mt-2">Enviar</button>
       </form>
+
+      
 
     </section>
 
