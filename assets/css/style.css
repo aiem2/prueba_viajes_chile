@@ -75,12 +75,45 @@ footer{
 /* PARA PANTALLA CHICA */
 
 @media (max-width:560px){
+    #toggle_no{
+        display:none
+    }
+    
     #quienes_somos{
         display:none;
     }
 
     .tarjetas{
         display:none;
+    }
+
+    #navbarSupportedContent{
+        background-color: black;
+    }
+}
+
+/* PARA PANTALLA GRANDE */
+
+@media (min-width:560px){
+    #quienes_somos{
+        padding-top:15vh;
+        margin-bottom: 5vh;  
+    }
+
+    .tarjetas{
+        padding-bottom:10vh;
+    }
+
+    #destacados{
+        padding-top:15vh;  
+    }
+
+    .tarjetas_destacados{
+        padding-bottom:10vh;
+    }
+
+    .tar_dest{
+        margin-bottom:12vh;
     }
 }
 
