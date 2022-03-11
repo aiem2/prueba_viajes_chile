@@ -20,6 +20,10 @@ body{
     font-family: "Lato"
 }
 
+.carrusel1{
+    z-index:2;
+}
+
 /* CARD */
 
 .tar_qs{
